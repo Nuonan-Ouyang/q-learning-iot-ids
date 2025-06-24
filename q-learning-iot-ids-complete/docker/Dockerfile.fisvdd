@@ -1,0 +1,4 @@
+FROM arm32v7/python:3.9-slim
+COPY fisvdd.tflite ./model.tflite
+COPY infer.py ./infer.py
+CMD ["python3", "infer.py"]
